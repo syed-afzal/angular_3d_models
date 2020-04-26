@@ -1,2 +1,44 @@
-<div #rendererContainer></div>
+<div class="main">
+  <x3d>
+    <scene>
+      <shape>
+
+        <appearance>
+          <material diffuseColor='1 0 0'></material>
+        </appearance>
+
+        <box></box>
+      </shape>
+
+      <transform translation='-3 0 0'>
+        <shape>
+          <appearance>
+            <material diffuseColor='0 1 0'></material>
+          </appearance>
+          <cone></cone>
+        </shape>
+      </transform>
+      <transform translation='3 0 0'>
+        <shape>
+          <appearance>
+            <material diffuseColor='0 0 1'></material>
+          </appearance>
+          <sphere></sphere>
+        </shape>
+      </transform>
+    </scene>
+  </x3d>
+
+  <x3d>
+    <scene>
+      <inline nameSpaceName="Deer" mapDEFToID="true" onclick='redNose();' url="assets/x3D/Deer.x3d" >  </inline>
+    </scene>
+  </x3d>
+
+  <x3d>
+    <scene>
+      <inline nameSpaceName="Deer" mapDEFToID="true" onclick='redNose();' url="assets/x3D/room.x3d" >  </inline>
+    </scene>
+  </x3d>
+</div>
 <router-outlet></router-outlet>

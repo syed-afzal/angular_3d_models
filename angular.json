@@ -28,10 +28,12 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/x3dom/x3dom.css",
               "src/styles.scss"
             ],
             "scripts": [
               "node_modules/three/build/three.js",
+              "node_modules/x3dom/x3dom.js",
               "src/assets/js/GLTFLoader.js",
               "src/assets/js/OrbitControls.js"
             ]
